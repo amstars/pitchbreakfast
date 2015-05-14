@@ -4,7 +4,6 @@
 
 # Time.zone = "UTC"
 
-activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
 
@@ -20,16 +19,13 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
 
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
+
 
   # Enable pagination
   # blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
-end
 
-page "/feed.xml", layout: false
 
 ###
 # Compass
@@ -78,7 +74,7 @@ page "/feed.xml", layout: false
 #   end
 # end
 
-set :css_dir, 'stylesheets'
+set :css_dir, 'css'
 
 set :js_dir, 'javascripts'
 
