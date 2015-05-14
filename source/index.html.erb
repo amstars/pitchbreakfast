@@ -1,12 +1,34 @@
-<body>
-
 <% content_for(:title, "Welcome to PitchBreakfast") %>
 <!-- BODY-->
-<%= partial "nav" %>
+<body data-spy="scroll" data-target=".scroller-spy" data-twttr-rendered="true">
 <!--START MAIN-WRAPPER--> 
+<div class="main-wrapper">
+  
+  <%= partial "nav" %>
 
+  <%= partial "header" %>
+  <!-- MAIN CONTENT CONTAINER -->
+  <div class="container">
+    <!-- START MARKETING DIV-->
+    <div class="marketing">
 
+      <%= partial "team" %>
+
+      <%= partial "service" %>
+
+      <%= partial "panelists" %>
+
+      <%= partial "pitchsters" %>
+
+      <%= partial "sponsors" %>
+
+      <%= partial "rsvp" %>
+
+    </div>
     <!-- END MAIN WRAPPER-->
-<%= partial "footer" %>
+    <%= partial "footer" %>
+  </div>
+</div>
+
 
 </body>
